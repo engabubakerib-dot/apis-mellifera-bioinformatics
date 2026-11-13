@@ -1,0 +1,5 @@
+options(repos=c(CRAN='https://cloud.r-project.org'))
+if(!requireNamespace('BiocManager',quietly=TRUE)) install.packages('BiocManager')
+BiocManager::install(c('edgeR','limma','DESeq2','tximport'),ask=FALSE,update=FALSE)
+for(p in c('edgeR','limma','DESeq2','tximport')) cat(p, as.character(packageVersion(p)), '\n', file='logs/tool_versions.txt', append=TRUE)
+cat(R.version.string,'\n',file='logs/tool_versions.txt',append=TRUE)

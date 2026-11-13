@@ -1,0 +1,14 @@
+# Reproducible environment for the Python parts of this project (tested versions in comments)
+name: apis_mellifera_project
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.13        # 3.13.18
+  - pandas=3.0         # 3.0.5
+  - numpy=2.5          # 2.5.3
+  - scipy=1.18         # 1.18.1
+  - matplotlib
+  - openpyxl
+  - nodejs             # report builder (npm package: docx)
+  # Needed for the NEXT steps (not installed/used yet):
+  # - r-base, bioconductor-edger, bioconductor-limma, bioconductor-deseq2, r-wgcna
+  # - salmon or star + subread (featureCounts), sra-tools, fastp, multiqc

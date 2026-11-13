@@ -1,0 +1,73 @@
+﻿# Raw biological data
+data/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.h5
+*.hdf5
+
+# Generated research outputs
+results/
+logs/
+reports/
+backups/
+envs/
+preflight_scratch/
+prefight_scratch/
+*_scratch/
+
+# Manuscript and private research materials
+LaTeX_Manuscript/
+Apis_mellifera_Manuscript_Overleaf/
+*.zip
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Python and R temporary files
+__pycache__/
+*.pyc
+.venv/
+venv/
+.Rhistory
+.RData
+.Rproj.user/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Kallisto binaries and downloaded archives
+tools/kallisto/kallisto.exe
+tools/kallisto/kallisto_windows-v*.tar.gz
+tools/kallisto/kallisto/test/*.fastq.gz
+tools/kallisto/kallisto/test/*.fasta.gz
+tools/kallisto/kallisto/test/*.gtf.gz
+
+# Python cache files
+**/__pycache__/
+*.py[cod]
+
+# Internal project tracking - review before publication
+PROJECT_STATUS.md
+DATA_PROVENANCE.md
+
+# Local Windows launchers - not part of the reviewer-facing code release
+RUN_*.bat
+
+# Local executable and experimental validation files
+tools/kallisto/kallisto/kallisto.exe
+scripts/validation/candidate/
+scripts/validation/preflight_expected_sha256.txt
+
+# Third-party Kallisto test fixtures
+tools/kallisto/kallisto/test/
